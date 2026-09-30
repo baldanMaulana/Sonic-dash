@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speed Runner Dash</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-wrap">
+  <div class="hud">
+    <div><span>SKOR</span><b id="score">0</b></div>
+    <div><span>KOIN</span><b id="coins">0</b></div>
+    <div><span>WAKTU</span><b id="time">200</b></div>
+    <div><span>HIGH SCORE</span><b id="highScore">0</b></div>
+  </div>
+
+  <canvas id="game" width="1000" height="560"></canvas>
+
+  <div class="controls">
+    <button id="startBtn">▶ MULAI</button>
+    <button id="musicBtn">🔊 MUSIK ON</button>
+    <button id="restartBtn">↻ ULANG</button>
+  </div>
+
+  <div id="message" class="message">
+    <h1>⚡ SPEED RUNNER DASH</h1>
+    <p>Lari sejauh mungkin, kumpulkan koin dan hindari rintangan!</p>
+    <p><b>SPACE / ↑</b> untuk lompat • <b>↓</b> untuk menunduk</p>
+  </div>
+
+  <audio id="music" loop preload="auto">
+    <source src="music.wav" type="audio/wav">
+  </audio>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
